@@ -1,9 +1,7 @@
 # My Portfolio
 
-#### Video Demo: [Watch on YouTube](https://www.youtube.com/watch?v=6rJnDE_VMSc)
-
 #### Description:
-My portfolio project is a comprehensive showcase of my skills and experiences in web development and cybersecurity. This portfolio was designed to highlight various aspects of my expertise, including completed projects, a detailed resume, and a contact section for potential clients or employers to reach out.
+This is a Sample Portofolio Website.
 
 ## Project Overview
 This portfolio website is built using a combination of HTML, CSS, and Flask, with a focus on presenting a clean, responsive design. The primary goal is to create an intuitive and visually appealing site that effectively communicates my skills, projects, and achievements.

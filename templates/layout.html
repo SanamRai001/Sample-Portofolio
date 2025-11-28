@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    {% block title %} {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}"><img src="../static/images/Rai.jpg" alt=""></a></li>
+                <li class="link"><a href="{{ url_for('index') }}">Home</a></li>
+                <li class="link"><a href="{{ url_for('about') }}">About Me</a></li>
+                <li class="link"><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li class="link"><a href="{{ url_for('blog') }}">Blog</a></li>
+                <li class="link"><a href="{{ url_for('resume') }}">Resume</a></li>
+                <li class="link"><a href="{{ url_for('contact')}}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block main %}
+    {% endblock %}
+
+    <footer>
+        <p>&copy; 2024 Sanam Rai. All rights Reservered</p>
+        <p>
+            <a href="https://github.com/SanamRai001">GitHub</a> |
+            <a href="https://www.linkedin.com/in/sanam-rai-6b2149212/">LinkedIn</a> |
+            <a href="mailto:sanamr571@outlook.com">Email</a>
+        </p>
+    </footer>
+    <script src="/project/static/script.js"></script>
+</body>
+</html>

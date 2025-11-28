@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <title> Projects </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='projects.css') }}">
+    {% endblock %}
+
+{% block main %}
+    <h1>Projects</h1>
+    <div class="projects-list">
+        {% for project in projects %}
+            <div class="project-summary">
+                <h2><a href="{{ url_for('project_detail', project_id=project['id']) }}">{{ project['title'] }}</a></h2>
+                <p class="project-description">{{ project['description'][:150] }}{% if project['description']|length > 150 %}...{% endif %}</p> <!-- Short summary with ellipsis -->
+                <p><strong>Technologies:</strong> {{ project['technologies'] }}</p>
+                {% if project['screenshot_url'] %}
+                    <img src="{{ project['screenshot_url'] }}" alt="Screenshot of {{ project['title'] }}" class="project-thumbnail">
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

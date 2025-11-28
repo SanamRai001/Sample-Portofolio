@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}
+    <title> Contact </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    {% endblock%}
+
+{% block main %}
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<main>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:sanamr571@outlook.com">sanamr571@outlook.com</a></p>
+        <p><strong>Phone:</strong> None</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanam-rai-6b2149212/" target="_blank">https://www.linkedin.com/in/sanam-rai-6b2149212/</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/SanamRai001" target="_blank">github.com/SanamRai001</a></p>
+    </section>
+</main>
+{% endblock%}

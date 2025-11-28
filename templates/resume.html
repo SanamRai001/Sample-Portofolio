@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block title %}
+    <title> Resume </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resume.css') }}">
+    {% endblock %}
+{% block main %}
+    <header>
+        <h1>Sanam Rai</h1>
+        <p>Student at Bhaktapur Multiple Campus</p>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:sanamr571@outlook.com">Email</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanam-rai-6b2149212/" target="_blank">LinkedIn Profile</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/SanamRai001" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </section>
+
+        <section class="professional-summary">
+            <h2>Professional Summary</h2>
+            <p>Passionate and innovative IT student with a strong background in programming and cybersecurity. Known for problem-solving and delivering robust solutions, I aim to leverage my expertise in cybersecurity and web development to drive impactful projects and technological advancements.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Technical Skills:</strong> Proficient in Python, C++, JavaScript, PHP, HTML, CSS, MySQL</li>
+                <li><strong>Soft Skills:</strong> Exceptional problem-solving, communication, and teamwork skills</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor’s Degree in Information Technology</strong></p>
+            <p>Tribhuvan University, Kathmandu, Nepal</p>
+            <p>Expected Graduation Date: 2026</p>
+            <p>Relevant Coursework: Algorithms, Web Development, Cybersecurity</p>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p><strong>Description:</strong> A personal portfolio website to showcase my skills and projects</p>
+                <p><strong>Technologies Used:</strong> Flask, HTML, CSS, JavaScript</p>
+                <p><strong>Link:</strong> <a href="www.sanam-rai.com.np" target="_blank">View Project</a></p>
+            </div>
+            
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <p><strong>CS50 Python</strong> - Issued by CS50</p>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <p>Available upon request.</p>
+        </section>
+    </main>
+{% endblock %}

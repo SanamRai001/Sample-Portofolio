@@ -1,0 +1,115 @@
+/* Project Details Page Styling */
+.project-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project-meta {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.project-meta p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.project-meta p strong {
+    color: #333;
+}
+
+.project-description,
+.project-features,
+.project-screenshot,
+.project-challenges,
+.project-links {
+    margin-bottom: 20px;
+}
+
+.project-description h2,
+.project-features h2,
+.project-screenshot h2,
+.project-challenges h2 {
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-description p,
+.project-challenges p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.project-features li {
+    margin-bottom: 10px;
+}
+
+.project-screenshot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.project-links p {
+    color: #555;
+}
+
+.project-links a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .project-detail {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .project-description h2,
+    .project-features h2,
+    .project-screenshot h2,
+    .project-challenges h2 {
+        font-size: 1.5em;
+    }
+
+    .project-meta p {
+        font-size: 0.9em;
+    }
+
+    .project-description p,
+    .project-challenges p {
+        font-size: 1em;
+    }
+}

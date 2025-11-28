@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <title> Home </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block main %}
+    <div id="hero-section">
+        <div id="info">
+            <h1>Sanam Rai</h1>
+            <h3>Student at Bhaktapur Multiple Campus</h3>
+            <p>
+                I’m a passionate IT student focused on web development and with a keen interest in cybersecurity. With a love for algorithms and problem-solving, I’m dedicated to crafting innovative solutions and enhancing digital experiences. Explore my portfolio to see how I combine technical skills with creativity to bring ideas to life.
+            </p><br>
+            <a href="{{ url_for('projects') }}">View my projects</a>
+            <a href="{{ url_for('resume') }}">My Resume</a>
+        </div>
+        <div id="photo">
+            <img src="../static/images/profile.jpg" alt="profile_image">
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <title> About Me </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">{% endblock %}
+
+{% block main %}
+    <div id="about" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <h1>About Me</h1>
+        
+        <section>
+            <h3>Introduction</h3>
+            <p>
+                Hi, I'm Sanam Rai, a passionate IT student currently studying at Bhaktapur Multiple Campus. I am dedicated to pursuing a career in web development with a keen interest in cybersecurity. I enjoy tackling complex problems and crafting innovative solutions.
+            </p>
+        </section>
+
+        <section>
+            <h3>Education</h3>
+            <p>
+                <strong>Bachelor in Information Technology</strong><br>
+                Bhaktapur Multiple Campus, Tribhuvan University<br>
+                Expected Graduation: 2026
+            </p>
+        </section>
+
+        <section>
+            <h3>Skills</h3>
+            <strong>Programming Language</strong>
+            <ul>
+                {% for skill in skills if skill["category"] == "Programming Languages" %}
+                    <li>{{ skill["detail"] }}</li>
+                {% endfor %}
+            </ul>
+            <strong>Web Technologies</strong>
+            <ul>
+                {% for skill in skills if skill["category"] == "Web Technologies" %}
+                    <li>{{ skill["detail"] }}</li>
+                {% endfor %}
+            </ul>
+            <strong>Soft skills</strong>
+            <ul>
+                {% for skill in skills if skill["category"] == "Soft Skills" %}
+                    <li>{{ skill["detail"] }}</li>
+                {% endfor %}
+            </ul>
+            <strong>Additional Skills</strong>
+            <ul>
+                {% for skill in skills if skill["category"] == "Additional Skills" %}
+                    <li>{{ skill["detail"] }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section>
+            <h3>Interests</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Cybersecurity</li>
+                <li>Algorithms</li>
+                <li>Chess and Gaming</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Goals</h3>
+            <ul>
+                <li>To build innovative and engaging web applications and games.</li>
+                <li>To gain extensive knowledge in cybersecurity and ethical hacking.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Personal Touch</h3>
+            <p>
+                "A person who enjoys walking will always walk further than the one who only enjoys the destination. So, embrace the journey and enjoy every step rather than worrying about the destination."
+            </p>
+        </section>
+    </div>
+{% endblock %}

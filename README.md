@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/readme/project-cover.svg" width="100%" alt="SAMPLE PORTFOLIO project cover"/>
+</p>
+
 # My Portfolio
 
 #### Description:
